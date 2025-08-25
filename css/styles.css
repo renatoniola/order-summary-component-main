@@ -1,0 +1,116 @@
+
+:root {
+  --primary-button-bg: hsl(245, 75%, 52%);
+  --primary-button-text: white;
+  --music-plan-color: hsl(224, 23%, 55%, 0.06);
+  --grey-text: hsl(224, 23%, 55%);
+}
+
+body {
+   background: url('../images/pattern-background-desktop.svg') no-repeat;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   font-family: 'Red Hat Display', sans-serif;
+   background-size: 100% 50%;
+   background-color: hsl(245, 75%, 52%, 0.1);
+}
+
+.attribution { 
+   font-size: 11px; 
+   text-align: center; 
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
+
+section.card {
+   max-width: 350px;
+}
+
+section.card > article.content {
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
+   background-color: white;
+   padding: 30px;
+   box-shadow: 0 0 10px hsl(223, 50%, 90%);
+   border-radius: 0 0 10px 10px;
+   text-align: center;
+}
+
+section.card > article.content > p {
+   padding: 10px;
+   font-size: 14px;
+   color: var(--grey-text);
+}
+
+section.card > article.content > button {
+   background-color: var(--primary-button-bg);
+   color: var(--primary-button-text);
+   border: none;
+   border-radius: 10px;
+   padding: 15px;
+   font-weight: 700;
+   margin-top: 20px;
+   cursor: pointer;
+   box-shadow: 0 0 10px hsl(223, 50%, 90%);
+   margin-bottom: 10px
+}
+
+section.card > article.content > .music-plan {
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--music-plan-color) ;
+   padding: 15px;
+   border-radius: 10px;
+}
+
+section.card > article.content > .music-plan > .change {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--primary-button-bg);
+    font-weight: 900;
+}
+
+section.card > article.content > .music-plan > .plan-details {
+   display: flex;
+   gap: 10px;
+}
+
+section.card > article.content > .music-plan > .plan-details .plan-details-price {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+ 
+}
+
+section.card > article.content > .music-plan > .plan-details .plan-details-price > p{
+    font-size: 14px;
+   color: var(--grey-text);
+}
+
+.image-header {
+   width: 100%;
+   border-radius: 10px 10px 0 0;
+}
+
+.image-header > img {
+   width: 100%;
+   height: auto;
+   display: block;
+   border-radius: 10px 10px 0 0;
+}
+
+section.card > article.content .cancel-order {
+   font-weight: 900;
+   color: var(--primary-button-bg);
+   font-size: 12px;
+}
